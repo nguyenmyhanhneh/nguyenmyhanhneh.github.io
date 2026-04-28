@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Nguyễn Mỹ Hạnh | QA/QC Intern</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Cài đặt cơ bản */
+        :root {
+            --primary-color: #2c3e50; /* Xanh đen */
+            --accent-color: #007bff; /* Xanh dương */
+            --text-color: #333;
+            --light-gray: #f8f9fa;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: #e9ecef;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        /* Khung giấy A4 */
+        .cv-container {
+            max-width: 850px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 50px 60px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border-top: 8px solid var(--primary-color);
+        }
+
+        /* Header - Thông tin cá nhân */
+        header {
+            text-align: center;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-size: 2.8em;
+            margin: 0;
+            color: var(--primary-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .job-title {
+            font-size: 1.2em;
+            color: var(--accent-color);
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 5px 0 15px 0;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            font-size: 0.95em;
+        }
+
+        .contact-info a {
+            color: #555;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-info a:hover { color: var(--accent-color); }
+        .contact-info i { color: var(--accent-color); margin-right: 5px; }
+
+        /* Tiêu đề các mục */
+        h2.section-title {
+            color: var(--primary-color);
+            font-size: 1.4em;
+            text-transform: uppercase;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        /* Lưới Kỹ năng & Chứng chỉ */
+        .grid-2-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .skill-box {
+            background: var(--light-gray);
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .skill-box h3 { margin: 0 0 10px 0; font-size: 1.1em; color: var(--primary-color); }
+        .skill-box ul { margin: 0; padding-left: 20px; }
+
+        /* Khối Dự án & Kinh nghiệm */
+        .project-item { margin-bottom: 25px; }
+        
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .project-name { font-size: 1.2em; font-weight: bold; color: var(--primary-color); margin: 0; }
+        .project-role { font-style: italic; color: #666; font-weight: bold; }
+        .project-tools { font-size: 0.9em; color: var(--accent-color); font-weight: bold; margin-bottom: 10px; }
+
+        ul.task-list { padding-left: 20px; margin-top: 0; }
+        ul.task-list li { margin-bottom: 5px; }
+
+        /* Badge / Nút chứng chỉ */
+        .badge {
+            display: inline-block;
+            background: var(--light-gray);
+            border: 1px solid #ddd;
+            padding: 5px 10px;
+            border-radius: 3px;
+            font-size: 0.9em;
+            font-weight: bold;
+            margin: 5px 5px 0 0;
+            color: var(--primary-color);
+        }
+
+        /* Responsive cho điện thoại */
+        @media (max-width: 768px) {
+            .cv-container { padding: 30px 20px; }
+            .grid-2-col { grid-template-columns: 1fr; }
+            .project-header { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="cv-container">
+    
+    <header>
+        <h1>Nguyễn Mỹ Hạnh</h1>
+        <div class="job-title">Thực tập sinh QA/QC | Software Tester</div>
+        <div class="contact-info">
+            <a href="mailto:hanhnguyen.07102005@gmail.com"><i class="fa-solid fa-envelope"></i>hanhnguyen.07102005@gmail.com</a>
+            <a href="https://linkedin.com/in/myhanh0710" target="_blank"><i class="fa-brands fa-linkedin"></i>linkedin.com/in/myhanh0710</a>
+            <a href="https://github.com/nguyenmyhanhneh" target="_blank"><i class="fa-brands fa-github"></i>github.com/nguyenmyhanhneh</a>
+        </div>
+    </header>
+
+    <section>
+        <h2 class="section-title"><i class="fa-solid fa-user-astronaut"></i> Tóm tắt bản thân</h2>
+        <p>Sinh viên năm 3 chuyên ngành Công nghệ Thông tin tại Trường Đại học Sư phạm TP.HCM. Định hướng phát triển chuyên sâu trong lĩnh vực Kiểm thử Phần mềm (QA/QC), tập trung vào <strong>API Testing</strong> và <strong>Shift-left Testing</strong>. Có khả năng đọc hiểu mã nguồn để phân tích nguyên nhân gốc rễ (Root Cause), nắm vững quy trình Agile/Scrum và có kỹ năng thiết kế kịch bản kiểm thử chặt chẽ.</p>
+    </section>
+
+    <section>
+        <h2 class="section-title"><i class="fa-solid fa-laptop-code"></i> Kỹ năng cốt lõi</h2>
+        <div class="grid-2-col">
+            <div class="skill-box">
+                <h3>Kiểm thử (Testing Skills)</h3>
+                <ul>
+                    <li><strong>Manual Testing:</strong> UI/UX, Functional, Regression. Áp dụng kỹ thuật Phân tích giá trị biên (BVA) & Phân vùng tương đương (EP).</li>
+                    <li><strong>API Testing:</strong> Postman, Restful API, JSON Schema Validation, Environment Variables.</li>
+                    <li>Viết Test Plan, thiết kế Test Case chi tiết.</li>
+                </ul>
+            </div>
+            <div class="skill-box">
+                <h3>Quy trình & Hạ tầng</h3>
+                <ul>
+                    <li><strong>Quản lý dự án:</strong> Jira, Trello, Bug Reporting.</li>
+                    <li><strong>Kiến trúc & Hệ thống:</strong> SDLC, STLC, Agile/Scrum.</li>
+                    <li><strong>Hạ tầng CNTT:</strong> Linux/Ubuntu Server CLI, quản trị mạng cơ bản (VirtualBox, DHCP, WinSCP).</li>
+                    <li><strong>Công cụ khác:</strong> GitHub, Figma, Draw.io.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title"><i class="fa-solid fa-briefcase"></i> Kinh nghiệm Dự án</h2>
+
+        <div class="project-item">
+            <div class="project-header">
+                <p class="project-name">Hệ thống Quản lý Tuyển dụng (Recruitment System)</p>
+                <span class="project-role">QA Intern / Software Tester</span>
+            </div>
+            <div class="project-tools">Công cụ: Postman, Jira, GitHub, Draw.io</div>
+            <ul class="task-list">
+                <li>Phân tích yêu cầu và kiến trúc hệ thống theo mô hình Control/Entity/Boundary.</li>
+                <li>Thiết kế và thực thi <strong>30+ Test Cases</strong> bao phủ luồng nghiệp vụ cốt lõi; phát hiện và log bug chi tiết lên Jira kèm evidence.</li>
+                <li>Thực hiện <strong>API Testing</strong> bằng Postman (các phương thức GET, POST, DELETE), kiểm tra dữ liệu trả về và bắt lỗi logic hệ thống.</li>
+                <li>Thực hiện Retest và Regression Testing sau khi Dev sửa lỗi.</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <p class="project-name">Sàn Thương mại Điện tử (E-commerce Platform)</p>
+                <span class="project-role">Manual QA & Requirement Analyst</span>
+            </div>
+            <div class="project-tools">Công cụ: Excel, Figma</div>
+            <ul class="task-list">
+                <li>Đóng vai trò QA cốt lõi, lập kế hoạch và thiết kế Test Case cho các chức năng: Đăng nhập, Giỏ hàng, Thanh toán.</li>
+                <li>Áp dụng khắt khe các kỹ thuật kiểm thử Hộp đen (Black-box testing) để kiểm tra form nhập liệu.</li>
+                <li>Đảm bảo hệ thống hoạt động đúng logic nghiệp vụ và trải nghiệm UI/UX mượt mà theo đúng bản thiết kế Figma.</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <p class="project-name">Hệ thống Quản lý Sách (Book Management API)</p>
+                <span class="project-role">API Tester</span>
+            </div>
+            <div class="project-tools">Công cụ: Postman</div>
+            <ul class="task-list">
+                <li>Tạo Postman Collection chuẩn hóa cho toàn bộ quy trình CRUD (Create, Read, Update, Delete).</li>
+                <li>Sử dụng thành thạo Environment Variables (BaseURL, Token) để tự động hóa việc truyền dữ liệu giữa các request.</li>
+                <li>Viết script kiểm tra Status Code và xác thực bảo mật API (Bearer Token / API Key).</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2 class="section-title"><i class="fa-solid fa-medal"></i> Chứng chỉ Nổi bật</h2>
+        <div>
+            <span class="badge">🏆 Postman API Fundamentals Student Expert</span>
+            <span class="badge">🏆 Scrum Fundamentals Certified (SFC)</span>
+            <span class="badge">🎯 Get Started with Jira (Coursera)</span>
+            <span class="badge">🎯 Katalon Studio for Beginners</span>
+            <span class="badge">🎯 CI/CD for Beginners (Simplilearn)</span>
+        </div>
+    </section>
+
+</div>
+
+</body>
+</html>
