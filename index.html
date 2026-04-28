@@ -6,12 +6,11 @@
     <title>CV - Nguyễn Mỹ Hạnh | QA/QC Intern</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* Cài đặt cơ bản */
         :root {
-            --primary-color: #2c3e50; /* Xanh đen */
-            --accent-color: #007bff; /* Xanh dương */
+            --primary-color: #8a1515; 
+            --accent-color: #c0392b;
             --text-color: #333;
-            --light-gray: #f8f9fa;
+            --light-gray: #fcf4f4; 
         }
         
         body {
@@ -23,7 +22,6 @@
             padding: 20px 0;
         }
 
-        /* Khung giấy A4 */
         .cv-container {
             max-width: 850px;
             margin: 0 auto;
@@ -33,12 +31,21 @@
             border-top: 8px solid var(--primary-color);
         }
 
-        /* Header - Thông tin cá nhân */
         header {
             text-align: center;
             border-bottom: 2px solid #eee;
             padding-bottom: 25px;
             margin-bottom: 25px;
+        }
+
+        .avatar {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--primary-color);
+            margin-bottom: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
 
         header h1 {
@@ -74,7 +81,6 @@
         .contact-info a:hover { color: var(--accent-color); }
         .contact-info i { color: var(--accent-color); margin-right: 5px; }
 
-        /* Tiêu đề các mục */
         h2.section-title {
             color: var(--primary-color);
             font-size: 1.4em;
@@ -88,7 +94,6 @@
             gap: 10px;
         }
 
-        /* Lưới Kỹ năng & Chứng chỉ */
         .grid-2-col {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -105,7 +110,6 @@
         .skill-box h3 { margin: 0 0 10px 0; font-size: 1.1em; color: var(--primary-color); }
         .skill-box ul { margin: 0; padding-left: 20px; }
 
-        /* Khối Dự án & Kinh nghiệm */
         .project-item { margin-bottom: 25px; }
         
         .project-header {
@@ -122,11 +126,10 @@
         ul.task-list { padding-left: 20px; margin-top: 0; }
         ul.task-list li { margin-bottom: 5px; }
 
-        /* Badge / Nút chứng chỉ */
         .badge {
             display: inline-block;
             background: var(--light-gray);
-            border: 1px solid #ddd;
+            border: 1px solid #eababa;
             padding: 5px 10px;
             border-radius: 3px;
             font-size: 0.9em;
@@ -135,7 +138,6 @@
             color: var(--primary-color);
         }
 
-        /* Responsive cho điện thoại */
         @media (max-width: 768px) {
             .cv-container { padding: 30px 20px; }
             .grid-2-col { grid-template-columns: 1fr; }
@@ -148,6 +150,8 @@
 <div class="cv-container">
     
     <header>
+        <img src="images/avatar.jpg" alt="Ảnh đại diện Nguyễn Mỹ Hạnh" class="avatar">
+        
         <h1>Nguyễn Mỹ Hạnh</h1>
         <div class="job-title">Thực tập sinh QA/QC | Software Tester</div>
         <div class="contact-info">
